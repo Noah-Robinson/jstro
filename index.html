@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+.card {
+  background-color: green;
+  width: 200px;
+  height: 280px;
+  display: inline-block;
+  margin: auto;
+}
+
+.card-container {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  width: 80vw;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.square {
+  height: 200px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="card-container">
+  <div class="card red" id="card0" data-tilt data-tilt-reverse="True" draggable="True"></div>
+  <div class="card blue" id="card1" data-tilt data-tilt-reverse="True" draggable="True"></div>
+  <div class="card" id="card2" data-tilt data-tilt-reverse="True" draggable="True"></div>
+  <div class="card square" id="card3" data-tilt data-tilt-reverse="True" draggable="True"></div>
+</div>
+
+</body>
+<script src="vanilla-tilt.js"></script>
+<script src="move-cards.js"></script>
+</html>
