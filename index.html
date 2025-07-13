@@ -4,11 +4,12 @@
 <style>
     
 .card {
-  background-color: green;
+  background-color: #f0f0f0;
   width: 200px;
   height: 280px;
   display: inline-block;
   margin: auto;
+  transition: 200ms;
 }
 
 .card-container {
@@ -16,6 +17,11 @@
   margin: auto;
   justify-content: space-between;
   width: 80vw;
+  padding-top: 100px;
+}
+
+.selected {
+  translate: 0px -40px;
 }
 
 .red {
@@ -24,6 +30,10 @@
 
 .blue {
   background-color: blue;
+}
+
+.green {
+  background-color: green;
 }
 
 .square {
@@ -35,10 +45,10 @@
 <body>
 
 <div class="card-container">
-  <div class="card red" id="card0" data-tilt data-tilt-reverse="True" draggable="True"></div>
-  <div class="card blue" id="card1" data-tilt data-tilt-reverse="True" draggable="True"></div>
-  <div class="card" id="card2" data-tilt data-tilt-reverse="True" draggable="True"></div>
-  <div class="card square" id="card3" data-tilt data-tilt-reverse="True" draggable="True"></div>
+  <div class="card red" data-tilt data-tilt-reverse="True" draggable="True"></div>
+  <div class="card blue" data-tilt data-tilt-reverse="True" draggable="True"></div>
+  <div class="card green" data-tilt data-tilt-reverse="True" draggable="True"></div>
+
 </div>
 
 </body>
