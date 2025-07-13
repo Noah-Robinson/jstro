@@ -1,4 +1,15 @@
-let cards = document.getElementsByClassName("card");
+//INIT vanilla tilt
+let tiltParams = {
+  reverse: true,
+  scale: 1.05,
+  gyroscope: false,
+}
+
+VanillaTilt.init(document.querySelectorAll(".card"), tiltParams);
+
+const cardContainer = document.getElementById("playing-card-container");
+let cards = cardContainer.children;
+
 
 function reassignIds() {
   for (let i = 0; i < cards.length; i++) {
@@ -7,29 +18,45 @@ function reassignIds() {
   }
 }
 
-for (let i = 0; i < cards.length; i++) {
-  reassignIds()
-  // FOR MOVING CARDS AROUND
-  cards[i].addEventListener("dragstart", (event) => {
-    event.dataTransfer.setData("text", event.target.id);
-  });
-  cards[i].addEventListener("dragover", (event) => {
-    event.preventDefault();
-  });
-  cards[i].addEventListener("drop", (event) => {
-    event.preventDefault();
-    data = event.dataTransfer.getData("text");
-    prevcard = document.getElementById(data);
-    prevcardclass = String(prevcard.classList);
-    prevcard.classList = event.target.classList;
-    event.target.classList = prevcardclass;
-  });
-  // FOR SELECTING CARDS
-  cards[i].addEventListener("click", (event) => {
-    if (event.target.classList.contains("selected")) {
-      event.target.classList.remove("selected")
+cardContainer.addEventListener("click", (event) => {
+  if ([...cardContainer.children].indexOf(event.target) == -1) {
+    //do nothing
+  } else if (event.target.classList.contains("selected")) {
+       event.target.classList.remove("selected");
+     } else {
+       event.target.classList.add("selected");
+     }
+});
+cardContainer.addEventListener("dragstart", (event) => {
+  event.dataTransfer.setData("text", [...cardContainer.children].indexOf(event.target));
+});
+cardContainer.addEventListener("dragover", (event) => {
+  event.preventDefault();
+});
+cardContainer.addEventListener("drop", (event) => {
+  event.preventDefault();
+  let reorder = document.createDocumentFragment();
+  let draggedIndex = parseInt(event.dataTransfer.getData("text"));
+  let droppedIndex = parseInt([...cardContainer.children].indexOf(event.target));
+  if (draggedIndex == -1 || droppedIndex == -1) {
+    return
+  }
+  console.log(draggedIndex);
+  console.log(droppedIndex);
+  for (let i = 0; i < cardContainer.children.length; i++) {
+    if (i == draggedIndex) {
+      reorder.appendChild(cardContainer.children[droppedIndex].cloneNode(true));
+      console.log("APPENDED DROP");
+    } else if (i == droppedIndex) {
+      reorder.appendChild(cardContainer.children[draggedIndex].cloneNode(true));
+      console.log("APPENDED DRAG");
     } else {
-      event.target.classList.add("selected");
+      reorder.appendChild(cardContainer.children[i].cloneNode(true));
+      console.log("APPENDED NORM");
     }
-  });
-}
+  }
+  console.log(reorder.children);
+  cardContainer.innerHTML = null;
+  cardContainer.appendChild(reorder);
+  VanillaTilt.init(document.querySelectorAll(".card"), tiltParams);
+});

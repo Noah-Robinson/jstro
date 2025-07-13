@@ -13,6 +13,7 @@
 }
 
 .card-container {
+  background-color: #f0f0f0;
   display: flex;
   margin: auto;
   justify-content: space-between;
@@ -36,19 +37,14 @@
   background-color: green;
 }
 
-.square {
-  height: 200px;
-}
-
 </style>
 </head>
 <body>
 
-<div class="card-container">
-  <div class="card red" data-tilt data-tilt-reverse="True" draggable="True"></div>
-  <div class="card blue" data-tilt data-tilt-reverse="True" draggable="True"></div>
-  <div class="card green" data-tilt data-tilt-reverse="True" draggable="True"></div>
-
+<div id="playing-card-container" class="card-container">
+  <div class="card red" draggable="True"></div>
+  <div class="card blue" draggable="True"></div>
+  <div class="card green" draggable="True"></div>
 </div>
 
 </body>
