@@ -7,16 +7,17 @@ let tiltParams = {
 
 VanillaTilt.init(document.querySelectorAll(".card"), tiltParams);
 
+
 const cardContainer = document.getElementById("playing-card-container");
 let cards = cardContainer.children;
+const cardWidth = cards[0].offsetWidth;
 
-
-function reassignIds() {
+function moveCards() {
   for (let i = 0; i < cards.length; i++) {
-    let cards = document.getElementsByClassName("card");
-    cards[i].id = "card" + i
+    cards[i].style.translate = cardContainer.offsetWidth / (cards.length + 2) * i + "px";
   }
 }
+
 
 cardContainer.addEventListener("click", (event) => {
   if ([...cardContainer.children].indexOf(event.target) == -1) {
@@ -41,22 +42,25 @@ cardContainer.addEventListener("drop", (event) => {
   if (draggedIndex == -1 || droppedIndex == -1) {
     return
   }
-  console.log(draggedIndex);
-  console.log(droppedIndex);
+  //console.log(draggedIndex);
+  //console.log(droppedIndex);
   for (let i = 0; i < cardContainer.children.length; i++) {
     if (i == draggedIndex) {
       reorder.appendChild(cardContainer.children[droppedIndex].cloneNode(true));
-      console.log("APPENDED DROP");
+      //console.log("APPENDED DROP");
     } else if (i == droppedIndex) {
       reorder.appendChild(cardContainer.children[draggedIndex].cloneNode(true));
-      console.log("APPENDED DRAG");
+      //console.log("APPENDED DRAG");
     } else {
       reorder.appendChild(cardContainer.children[i].cloneNode(true));
-      console.log("APPENDED NORM");
+      //console.log("APPENDED NORM");
     }
   }
-  console.log(reorder.children);
+  //console.log(reorder.children);
   cardContainer.innerHTML = null;
   cardContainer.appendChild(reorder);
   VanillaTilt.init(document.querySelectorAll(".card"), tiltParams);
+  moveCards();
 });
+
+moveCards();
