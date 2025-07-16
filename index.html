@@ -6,6 +6,7 @@
 .card {
   background-color: #f0f0f0;
   position: absolute;
+  translate: 0px 0px;
   width: 200px;
   min-width: 200px;
   height: 280px;
@@ -20,7 +21,6 @@
 }
 
 .selected {
-  translate: 0px -40px;
 }
 
 .red {
@@ -35,26 +35,22 @@
   background-color: green;
 }
 
+.purple {
+  background-color: purple;
+}
+
 </style>
 </head>
 <body>
 
 <div id="playing-card-container" class="card-container">
-  <div class="card red" draggable="True"></div>
+  <div class="card purple" draggable="True"></div>
   <div class="card blue" draggable="True"></div>
   <div class="card green" draggable="True"></div>
   <div class="card red" draggable="True"></div>
-  <div class="card blue" draggable="True"></div>
-  <div class="card green" draggable="True"></div>
-  <div class="card red" draggable="True"></div>
-  <div class="card blue" draggable="True"></div>
-  <div class="card green" draggable="True"></div>
-  <div class="card red" draggable="True"></div>
-  <div class="card blue" draggable="True"></div>
-  <div class="card green" draggable="True"></div>
 </div>
 
 </body>
 <script src="vanilla-tilt.js"></script>
-<script src="move-cards.js"></script>
+<script src="main.js"></script>
 </html>
