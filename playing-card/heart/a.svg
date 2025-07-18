@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200"
+   height="280"
+   viewBox="0 0 52.916665 74.083333"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3472px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#000000;stroke-width:0.264583"
+       x="1.9931947"
+       y="10.673275"
+       id="text481"><tspan
+         id="tspan479"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3472px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';stroke-width:0.264583"
+         x="1.9931947"
+         y="10.673275">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3472px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#000000;stroke-width:0.264583"
+       x="-50.92347"
+       y="-63.410057"
+       id="text481-1"
+       transform="scale(-1)"><tspan
+         id="tspan479-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3472px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';stroke-width:0.264583"
+         x="-50.92347"
+         y="-63.410057">A</tspan></text>
+    <path
+       id="rect671"
+       style="stroke-width:0.377328"
+       d="m 26.458334,30.901914 c 0,0 6.722706,-5.017018 8.975753,-2.763974 2.253045,2.253048 2.573008,4.906536 1.505018,7.908506 -1.656035,4.654879 -10.480771,10.480771 -10.480771,10.480771 0,0 -8.824736,-5.825892 -10.480771,-10.480772 -1.067993,-3.001968 -0.748026,-5.655457 1.505018,-7.908503 2.253047,-2.253046 8.975753,2.763972 8.975753,2.763972 z" />
+  </g>
+</svg>

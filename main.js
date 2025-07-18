@@ -23,6 +23,15 @@ function moveCards() {
   }
 }
 
+function displayCards() {
+  for (let i = 0; i < cards.length; i++) {
+    let suite = cards[i].dataset.suite;
+    let type = cards[i].dataset.type;
+    cards[i].style.backgroundImage = "url('playing-card/" + suite + "/" + type + ".svg')";
+    cards[i].style.backgroundSize = "200px 280px";
+  }
+}
+
 
 cardContainer.addEventListener("click", (event) => {
   if ([...cardContainer.children].indexOf(event.target) == -1) {
@@ -69,4 +78,9 @@ cardContainer.addEventListener("drop", (event) => {
   moveCards();
 });
 
+window.addEventListener("resize", (event) => {
+  moveCards();
+});
+
 moveCards();
+displayCards();

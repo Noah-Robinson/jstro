@@ -11,6 +11,8 @@
   min-width: 200px;
   height: 280px;
   transition: 200ms;
+  border-radius: 3px;
+  background-size: 200px 280px;
 }
 
 .card-container {
@@ -23,20 +25,21 @@
 .selected {
 }
 
-.red {
+/* Eventually replace these with card enhancements */
+[data-suite="spade"] {
+  background-color: purple;
+}
+
+[data-suite="heart"] {
   background-color: red;
 }
 
-.blue {
+[data-suite="club"] {
   background-color: blue;
 }
 
-.green {
-  background-color: green;
-}
-
-.purple {
-  background-color: purple;
+[data-suite="diamond"] {
+  background-color: orange;
 }
 
 </style>
@@ -44,10 +47,10 @@
 <body>
 
 <div id="playing-card-container" class="card-container">
-  <div class="card purple" draggable="True"></div>
-  <div class="card blue" draggable="True"></div>
-  <div class="card green" draggable="True"></div>
-  <div class="card red" draggable="True"></div>
+  <div class="card" data-suite="spade" data-type="a" draggable="True"></div>
+  <div class="card" data-suite="heart" data-type="a" draggable="True"></div>
+  <div class="card" data-suite="club" data-type="a" draggable="True"></div>
+  <div class="card" data-suite="diamond" data-type="a" draggable="True"></div>
 </div>
 
 </body>

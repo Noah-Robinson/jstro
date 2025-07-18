@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200"
+   height="280"
+   viewBox="0 0 52.916665 74.083333"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <g
+     id="layer1">
+    <path
+       id="path321"
+       style="stroke-width:0.505901"
+       d="M 31.549076,48.627742 H 26.458333 21.36759 c 0,0 2.711316,-1.992427 3.557176,-3.39691 0.968765,-1.608562 1.533567,-5.420515 1.533567,-5.420515 0,0 0.564802,3.811953 1.533569,5.420515 0.845861,1.404483 3.557174,3.39691 3.557174,3.39691 z" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3472px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#000000;stroke-width:0.264583"
+       x="1.9931947"
+       y="10.673275"
+       id="text481"><tspan
+         id="tspan479"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3472px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';stroke-width:0.264583"
+         x="1.9931947"
+         y="10.673275">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3472px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#000000;stroke-width:0.264583"
+       x="-50.92347"
+       y="-63.410057"
+       id="text481-1"
+       transform="scale(-1)"><tspan
+         id="tspan479-7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3472px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';stroke-width:0.264583"
+         x="-50.92347"
+         y="-63.410057">A</tspan></text>
+    <path
+       id="rect671"
+       style="stroke-width:0.333509"
+       d="m 26.458333,42.468407 c 0,0 -5.941995,4.434389 -7.933394,2.442992 -1.991398,-1.9914 -2.274203,-4.336737 -1.33024,-6.990087 1.463719,-4.114305 9.263634,-9.263633 9.263634,-9.263633 0,0 7.799914,5.149328 9.263633,9.263634 0.943966,2.653348 0.661157,4.998686 -1.33024,6.990084 -1.991399,1.991399 -7.933393,-2.44299 -7.933393,-2.44299 z" />
+  </g>
+</svg>
