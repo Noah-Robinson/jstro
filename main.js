@@ -7,9 +7,23 @@ let tiltParams = {
 
 VanillaTilt.init(document.querySelectorAll(".card"), tiltParams);
 
+// DEFINE VARIABLES
 const cardContainer = document.getElementById("playing-card-container");
 let cards = cardContainer.children;
-const cardWidth = cards[0].offsetWidth;
+let cardWidth = cards[0].offsetWidth;
+let cardHeight = cards[0].offsetHeight;
+
+//DEFINE GAME VARIABLES
+let handSize = 7;
+let selectedCards = 0;
+
+function windowResize() {
+  cardWidth = cards[0].offsetWidth;
+  cardHeight = cards[0].offsetHeight;
+  console.log(cardWidth + " , " + cardHeight);
+  moveCards();
+  displayCards();
+}
 
 function moveCards() {
   for (let i = 0; i < cards.length; i++) {
@@ -28,18 +42,20 @@ function displayCards() {
     let suite = cards[i].dataset.suite;
     let type = cards[i].dataset.type;
     cards[i].style.backgroundImage = "url('playing-card/" + suite + "/" + type + ".svg')";
-    cards[i].style.backgroundSize = "200px 280px";
+    cards[i].style.backgroundSize = cardWidth + "px " + cardHeight + "px";
   }
 }
 
 
 cardContainer.addEventListener("click", (event) => {
   if ([...cardContainer.children].indexOf(event.target) == -1) {
-    //do nothing
+    //This is div do nothing
   } else if (event.target.classList.contains("selected")) {
     event.target.classList.remove("selected");
-  } else {
+    selectedCards -= 1;
+  } else if (selectedCards <= 4) {
     event.target.classList.add("selected");
+    selectedCards += 1;
   }
   moveCards();
 });
@@ -78,8 +94,9 @@ cardContainer.addEventListener("drop", (event) => {
   moveCards();
 });
 
+let winResizeTimeout;
 window.addEventListener("resize", (event) => {
-  moveCards();
+  winResizeTimeout = setTimeout(windowResize, 175);
 });
 
 moveCards();

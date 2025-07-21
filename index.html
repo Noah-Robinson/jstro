@@ -7,9 +7,9 @@
   background-color: #f0f0f0;
   position: absolute;
   translate: 0px 0px;
-  width: 200px;
-  min-width: 200px;
-  height: 280px;
+  width: 10vw;
+  min-width: 10vw;
+  height: 14vw;
   transition: 200ms;
   border-radius: 3px;
   background-size: 200px 280px;
@@ -18,8 +18,10 @@
 .card-container {
   background-color: #f0f0f0;
   margin: auto;
-  width: 80vw;
-  padding-top: 100px;
+  width: 60vw;
+  height: 16vw;
+  padding-top: 10px;
+  float: right;
 }
 
 .selected {
@@ -42,15 +44,31 @@
   background-color: orange;
 }
 
+.sidebar {
+  background-color: #f0ff00;
+  width: 33vw;
+  height: 100vh;
+  float: left;
+}
+
 </style>
 </head>
 <body>
-
+<div class="sidebar">
+  <div>PLAY</div>
+  <div>DISCARD</div>
+</div>
 <div id="playing-card-container" class="card-container">
-  <div class="card" data-suite="spade" data-type="a" draggable="True"></div>
   <div class="card" data-suite="heart" data-type="a" draggable="True"></div>
-  <div class="card" data-suite="club" data-type="a" draggable="True"></div>
-  <div class="card" data-suite="diamond" data-type="a" draggable="True"></div>
+  <div class="card" data-suite="heart" data-type="2" draggable="True"></div>
+  <div class="card" data-suite="heart" data-type="3" draggable="True"></div>
+  <div class="card" data-suite="heart" data-type="4" draggable="True"></div>
+  <div class="card" data-suite="heart" data-type="5" draggable="True"></div>
+  <div class="card" data-suite="heart" data-type="6" draggable="True"></div>
+  <div class="card" data-suite="heart" data-type="7" draggable="True"></div>
+  <div class="card" data-suite="heart" data-type="8" draggable="True"></div>
+  <div class="card" data-suite="heart" data-type="9" draggable="True"></div>
+  <div class="card" data-suite="heart" data-type="10" draggable="True"></div>
 </div>
 
 </body>

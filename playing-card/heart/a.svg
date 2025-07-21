@@ -7,8 +7,31 @@
    viewBox="0 0 52.916665 74.083333"
    version="1.1"
    id="svg5"
+   sodipodi:docname="a.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="1.3756362"
+     inkscape:cx="85.778494"
+     inkscape:cy="161.74335"
+     inkscape:window-width="1352"
+     inkscape:window-height="709"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
   <defs
      id="defs2" />
   <g
@@ -34,9 +57,27 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3472px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';stroke-width:0.264583"
          x="-50.92347"
          y="-63.410057">A</tspan></text>
-    <path
-       id="rect671"
-       style="stroke-width:0.377328"
-       d="m 26.458334,30.901914 c 0,0 6.722706,-5.017018 8.975753,-2.763974 2.253045,2.253048 2.573008,4.906536 1.505018,7.908506 -1.656035,4.654879 -10.480771,10.480771 -10.480771,10.480771 0,0 -8.824736,-5.825892 -10.480771,-10.480772 -1.067993,-3.001968 -0.748026,-5.655457 1.505018,-7.908503 2.253047,-2.253046 8.975753,2.763972 8.975753,2.763972 z" />
+    <text
+       xml:space="preserve"
+       style="font-size:31.75px;fill:#000000;stroke-width:0.264583"
+       x="15.028237"
+       y="35.093666"
+       id="text367"><tspan
+         sodipodi:role="line"
+         id="tspan365"
+         style="stroke-width:0.264583"
+         x="15.028237"
+         y="35.093666" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:31.75px;fill:#000000;stroke-width:2.79264"
+       x="12.234395"
+       y="48.60685"
+       id="text224"><tspan
+         sodipodi:role="line"
+         id="tspan222"
+         style="font-size:31.75px;stroke-width:2.79264"
+         x="12.234395"
+         y="48.60685">♥</tspan></text>
   </g>
 </svg>

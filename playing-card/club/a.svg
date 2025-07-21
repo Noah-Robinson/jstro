@@ -7,41 +7,35 @@
    viewBox="0 0 52.916665 74.083333"
    version="1.1"
    id="svg5"
+   sodipodi:docname="a.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="1.3756362"
+     inkscape:cx="85.778494"
+     inkscape:cy="161.74335"
+     inkscape:window-width="1352"
+     inkscape:window-height="709"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
   <defs
      id="defs2" />
   <g
      id="layer1">
-    <g
-       id="g425"
-       transform="matrix(1.9120685,0,0,1.9120685,-5.4235466,-16.093772)">
-      <g
-         id="g267">
-        <circle
-           style="fill:#000000;stroke-width:0.264583"
-           id="path111"
-           cx="14.130975"
-           cy="28.821037"
-           r="3.8421943" />
-        <circle
-           style="fill:#000000;stroke-width:0.264583"
-           id="path111-3"
-           cx="19.217077"
-           cy="28.821037"
-           r="3.8421943" />
-      </g>
-      <circle
-         style="fill:#000000;stroke-width:0.264583"
-         id="path111-3-6"
-         cx="16.674026"
-         cy="24.742001"
-         r="3.8421943" />
-      <path
-         id="path321"
-         style="stroke-width:0.264583"
-         d="m 19.336453,34.679205 h -2.662427 -2.662427 c 0,0 1.418001,-1.042027 1.860381,-1.776563 0.506658,-0.841268 0.802046,-2.834896 0.802046,-2.834896 0,0 0.295388,1.993628 0.802047,2.834896 0.44238,0.734536 1.86038,1.776563 1.86038,1.776563 z" />
-    </g>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3472px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#000000;stroke-width:0.264583"
@@ -63,5 +57,27 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.3472px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';stroke-width:0.264583"
          x="-50.92347"
          y="-63.410057">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:31.75px;fill:#000000;stroke-width:0.264583"
+       x="15.028237"
+       y="35.093666"
+       id="text367"><tspan
+         sodipodi:role="line"
+         id="tspan365"
+         style="stroke-width:0.264583"
+         x="15.028237"
+         y="35.093666" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:31.75px;fill:#000000;stroke-width:2.79264"
+       x="12.234395"
+       y="48.60685"
+       id="text224"><tspan
+         sodipodi:role="line"
+         id="tspan222"
+         style="font-size:31.75px;stroke-width:2.79264"
+         x="12.234395"
+         y="48.60685">♣</tspan></text>
   </g>
 </svg>
