@@ -2,54 +2,162 @@
 <html>
 <head>
 <style>
-    
-.card {
-  background-color: #f0f0f0;
-  position: absolute;
-  translate: 0px 0px;
-  width: 200px;
-  min-width: 200px;
-  height: 280px;
-  transition: 200ms;
+
+@font-face {
+	font-family: balatro;
+	src: url(font/balatro.otf);
+}
+
+* {
+	overflow-y: hidden;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline: 0px;
+}
+
+body {
+	background-color: #3e8465;
+}
+
+.sidebar {
+	background-color: #283637;
+	width: 25vw;
+	height: 100vh;
+	margin-left: 3vw;
+	float: left;
+}
+
+.blind-title {
+	background-color: #0061a0;
+	color: #ffffff;
+	font-family: balatro;
+	text-shadow: 0.15vw 0.15vw rgba(0, 0, 0, 0.2);
+	margin: 1vh 1vw 1vh 1vw;
+	text-align: center;
+	border-radius: 0.5vw;
+	padding: 0.5vw;
+}
+
+.blind-info {
+	background-color: #0b3e5b;
+}
+
+.sidebar-grid {
+	display: grid;
+	grid-template-areas:
+	"infobutton handcount discardcount" 
+	"infobutton moneycount moneycount" 
+	"optionbutton moneycount moneycount" 
+	"optionbutton antecount roundcount";
+	padding: 1vw;
+}
+
+.sidebar-grid-items {
+	background-color: #0f0f0f;
+	text-align: center;
+	text-shadow: 0.15vw 0.15vw rgba(0, 0, 0, 0.2);
+	font-size: 2vw;
+	font-family: balatro;
+	margin: 0.5vw;
+	padding: 0.5vw;
+	border-radius: 0.5vw;
+}
+
+.infobutton {
+	grid-area: infobutton;
+	background-color: #f7453c;
+	color: #ffffff;
+}
+
+.optionbutton {
+	grid-area: optionbutton;
+	background-color: #ee9100;
+	color: #ffffff;
+}
+
+.handcount {
+	grid-area: handcount;
+	color: #0089f6;
+}
+
+.discardcount {
+	grid-area: discardcount;
+	color: #f7453c;
+}
+
+.moneycount {
+	grid-area: moneycount;
+	color: #ee9100;
+}
+
+.antecount {
+	grid-area: antecount;
+	color: #ee9100;
+}
+
+.antecountwhite {
+	color: white;
+	font-size: 1.5vw;
+}
+
+.roundcount {
+	grid-area: roundcount;
+	color: #ee9100;
 }
 
 .card-container {
-  background-color: #f0f0f0;
-  margin: auto;
-  width: 80vw;
-  padding-top: 100px;
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 60vw;
+	margin: 3vh auto 0px auto;
+	display: flex;
+	flex-direction: right;
 }
 
-.selected {
-}
-
-.red {
-  background-color: red;
-}
-
-.blue {
-  background-color: blue;
-}
-
-.green {
-  background-color: green;
-}
-
-.purple {
-  background-color: purple;
+.card {
+	background-color: #f0f0f0;
+  	position: absolute;
+  	translate: 0px 0px;
+  	width: 8vw;
+  	min-width: 8vw;
+  	height: 11.2vw;
+  	transition: 200ms;
+  	border-radius: 3px;
+  	background-size: 200px 280px;
 }
 
 </style>
 </head>
 <body>
-
-<div id="playing-card-container" class="card-container">
-  <div class="card purple" draggable="True"></div>
-  <div class="card blue" draggable="True"></div>
-  <div class="card green" draggable="True"></div>
-  <div class="card red" draggable="True"></div>
+	
+<div class="sidebar">
+	<h1 class="blind-title">Small Blind</h1>
+	<div class="blind-info">
+		
+	</div>
+	<div class="sidebar-grid">
+		<h1 class="infobutton sidebar-grid-items">Round<br> Info</h1>
+		<h1 class="optionbutton sidebar-grid-items">Options</h1>
+		<h1 class="handcount sidebar-grid-items">2</h1>
+		<h1 class="discardcount sidebar-grid-items">1</h1>
+		<h1 class="moneycount sidebar-grid-items">$20</h1>
+		<h1 class="antecount sidebar-grid-items">2<span class="antecountwhite">/8</span></h1>
+		<h1 class="roundcount sidebar-grid-items">1</h1>
+	</div>
 </div>
+<div id="playing-card-container" class="card-container">
+	<div class="card" data-suite="heart" data-type="a" draggable="True"></div>
+  	<div class="card" data-suite="heart" data-type="2" draggable="True"></div>
+  	<div class="card" data-suite="heart" data-type="3" draggable="True"></div>
+  	<div class="card" data-suite="heart" data-type="4" draggable="True"></div>
+  	<div class="card" data-suite="heart" data-type="5" draggable="True"></div>
+  	<div class="card" data-suite="heart" data-type="6" draggable="True"></div>
+  	<div class="card" data-suite="heart" data-type="7" draggable="True"></div>
+  	<div class="card" data-suite="heart" data-type="8" draggable="True"></div>
+  	<div class="card" data-suite="heart" data-type="9" draggable="True"></div>
+  	<div class="card" data-suite="heart" data-type="10" draggable="True"></div>
 
+</div>
 </body>
 <script src="vanilla-tilt.js"></script>
 <script src="main.js"></script>
